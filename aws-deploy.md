@@ -1,17 +1,22 @@
+# Deploy Production UI
+
+To deploy for production usage, make sure to build the Backend API and UI projects.
+
 ## Deploy to AWS
 
-If need to deploy to AWS, we need to clone repository and setup locally `personal-finance-backend-aws`
+There is a
+If need to deploy to AWS, we need to clone repository and setup locally `arthasight-backend`
 
 ### Build for AWS locally
 
 Create a file named `envaws` in project root directory with following contents
 
 ```properties
-REACT_APP_BASE_PATH=/personal-finance
-REACT_APP_REST_API_BASE_PATH=/api
+VITE_BASE_PATH=/personal-finance
+VITE_REST_API_BASE_PATH=/api
 GENERATE_SOURCEMAP=false
 PUBLIC_URL=/ui/
-REACT_APP_MINIMUM_SESSION_TIME=30 minutes
+VITE_MINIMUM_SESSION_TIME=30 minutes
 ```
 
 ### Update package.json
@@ -27,8 +32,8 @@ add following scripts to `package.json`. the scripts are best suited for window 
   "prebuildwithoutmocklocal": "copy src\\demo\\dummy.ts src\\demo\\index.ts",
   "buildwithoutmocklocal": "react-scripts build",
   "postbuildwithoutmocklocal": "copy src\\demo\\demo.ts src\\demo\\index.ts",
-  "precopytoinfralocal": "rmdir /S /Q ..\\personal-finance-backend-aws\\dist\\ui",
-  "copytoinfralocal": "xcopy /E build ..\\personal-finance-backend-aws\\dist\\ui\\"
+  "precopytoinfralocal": "rmdir /S /Q ..\\arthasight-backend\\dist\\ui",
+  "copytoinfralocal": "xcopy /E build ..\\arthasight-backend\\dist\\ui\\"
 }
 ```
 
@@ -38,9 +43,9 @@ The files `deploy-finance-ui.bat` and `invalidate-ui.bat` should be created in p
 
 Location example,
 
-> personal-finance-ui repo located at `%user%\Documents\GitHub\personal-finance-ui`
+> arthasight-ui repo located at `%user%\Documents\GitHub\arthasight-ui`
 >
-> personal-finance-backend-aws repo located at `%user%\Documents\GitHub\personal-finance-backend-aws`
+> arthasight-backend repo located at `%user%\Documents\GitHub\arthasight-backend`
 >
 > deploy-finance-ui.bat should be at `%user%\Documents\deploy-finance-ui.bat`
 >
@@ -62,7 +67,7 @@ if %ERRORLEVEL% neq 0 goto :error
 call npm run copytoinfra
 if %ERRORLEVEL% neq 0 goto :error
 
-cd ..\personal-finance-backend-aws
+cd ..\arthasight-backend
 
 call cdk deploy MyFinanceUiDeployStack --exclusively
 if %ERRORLEVEL% neq 0 goto :error

@@ -1,0 +1,39 @@
+- create a milestone with version following v
+- assign milestone to issues which should be worked on
+- while working on issues, update status as progressing
+- create a milestone branch with pattern `milestone/v${versionMajor.minor.patch}
+- create a PR and assign a milestone. convert it to draft
+- when all issues are resolved, create the regression test plan by running workflow on testing branch https://github.com/rajexcited/arthasight-ui/actions/workflows/test-exec-plan.yml
+  - select branch, testing,
+- deploy testplan environment by creating issue through template `Request Regression - Provision/Deprovision Non-prod Environment`. update details, labels and milestone in issue and submit
+- run regression automation script
+- if there are issues found, open sub-issues and work on then. retest
+- if automation scripts are successful, post screenshots of
+  - spec results from command output
+  - open the html report, all scenarios (high level)
+  - html report, context details of auth
+  - html report, context details of expenses
+  - html report, context details of payment accounts
+  - html report, context details of settings
+- If all passed, comment "There are no issues" and all good status badge(there is saved reply)
+- If critical issues not found and okay to release, comment "There are no critical issues" and all good status badge(there is saved reply)
+- deprovision the testplan environment
+- if there are no sub issues opened, close regression
+- post comment on PR, "Regression Test Plan: <link>"
+- when PR is ready to merge, update it to "ready to review"
+- verify checks and if all checks passed, merge PR option will be enabled.
+- squash and merge PR, which should delete milestone branch automatically. make sure of it.
+- run workflow, generate release draft, https://github.com/rajexcited/arthasight-ui/actions/workflows/release-change.yml
+- verify the release notes, update if required.
+- get ready for release, run release prod workflow by creating issue through template `Request - Deploy or Rollback Production Environment`
+- after prod is released, verify issue for post deployment activities, is created. update relationship to prod release as parent.
+- verify tag created
+- run smoke automation test and add screenshots of spec results, test reports details
+- add comment, "Smoke Tests successful" if pass
+- verify post deployment activities and mark the checklist.
+- add status badge comment if all good, and close post deployment issue.
+- if there are issues found in prod, initiate rollback and close the current post deployment issue, giving error details
+- When Prod release is good and all post deployment activities are successful,
+  - close milestone
+  - publish release notes
+  - make sure all issues are closed for milestone

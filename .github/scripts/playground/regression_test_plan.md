@@ -10,7 +10,7 @@ labels: [High, test execution]
 
 ### Milestone:
 
-[milestone $milestone.title](https://github.com/rajexcited/personal-finance-ui/milestone/$milestone.id)
+[milestone $milestone.title](https://github.com/rajexcited/arthasight-ui/milestone/$milestone.id)
 
 ### Impact Areas:
 
@@ -24,7 +24,7 @@ labels: [High, test execution]
 
 | Index | Title          | Impact               | Status  | Test case Id                                                                                                           |
 | ----- | -------------- | -------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-| $ind  | $details.title | $details.tags.impact | Pending | [$metadata.id](https://github.com/rajexcited/personal-finance-ui/blob/testing/test-cases/$metadata.relative_file_path) |
+| $ind  | $details.title | $details.tags.impact | Pending | [$metadata.id](https://github.com/rajexcited/arthasight-ui/blob/testing/test-cases/$metadata.relative_file_path) |
 
 ## Pass/Fail Criteria
 

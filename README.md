@@ -31,7 +31,7 @@ Generating summary of test cases for below fields. You can download the latest a
 - Tags.impact
 - Tags.feature
 
-[![Validate Test cases](https://github.com/rajexcited/personal-finance-ui/actions/workflows/tc-build.yml/badge.svg?branch=testing)](https://github.com/rajexcited/personal-finance-ui/actions/workflows/tc-build.yml)
+[![Validate Test cases](https://github.com/rajexcited/arthasight-ui/actions/workflows/tc-build.yml/badge.svg?branch=testing)](https://github.com/rajexcited/arthasight-ui/actions/workflows/tc-build.yml)
 
 ## Create Test Execution Plan
 
@@ -49,7 +49,7 @@ One of the requisite of milestone to deploy in prod is to run regression TEP wit
 
 To prep for regression,
 
-- Run the [TEP workflow](https://github.com/rajexcited/personal-finance-ui/actions/workflows/test-exec-plan.yml)
+- Run the [TEP workflow](https://github.com/rajexcited/arthasight-ui/actions/workflows/test-exec-plan.yml)
 - Enter the milestone version. e.g. if milestone is v0.1.0 then enter `0.1.0`
 - Select `Regression` in execution type
 - Make sure to select `testing` branch

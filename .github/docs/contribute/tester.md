@@ -59,7 +59,7 @@ The list of users are in [test users file](../tests/data/stage-users.md)
 
 The Demo site is very useful to troubleshoot UI issues, verify new enhancements, etc.
 
-link: https://rajexcited.github.io/personal-finance-ui/
+link: https://rajexcited.github.io/arthasight-ui/
 
 for login, use the email Id ending with `@demo.com` with any password.
 

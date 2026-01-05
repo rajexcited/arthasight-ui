@@ -29,7 +29,7 @@ title: [Testplan]: Regression Test Plan for $milestone.title
 
 | Index | Title          | Priority             | Execution           | Status  | Test Case ID                                                                                                           |
 | ----- | -------------- | -------------------- | ------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-| $ind  | $details.title | $details.tags.impact | $metadata.execution | Pending | [$metadata.id](https://github.com/rajexcited/personal-finance-ui/blob/testing/test-cases/$metadata.relative_file_path) |
+| $ind  | $details.title | $details.tags.impact | $metadata.execution | Pending | [$metadata.id](https://github.com/rajexcited/arthasight-ui/blob/testing/test-cases/$metadata.relative_file_path) |
 
 ## Start/Stop Regression Environment
 

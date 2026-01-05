@@ -33,3 +33,4 @@ null
 __pycache__
 /public/build
 /public/node_modules
+*.future

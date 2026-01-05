@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  ARTIFACT_NAME_PREFIX: personal-finance-ui-${{ github.event.issue.milestone.title }}
+  ARTIFACT_NAME_PREFIX: arthasight-ui-${{ github.event.issue.milestone.title }}
   DISPLAY_TROUBLESHOOT_OUTPUT: false
 
 permissions:

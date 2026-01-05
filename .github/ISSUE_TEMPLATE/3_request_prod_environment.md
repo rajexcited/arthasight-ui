@@ -28,7 +28,7 @@ labels: [deployment, "env: production", rollback, request]
 
 > **Note:** _Provide priority changes or specify "Not Applicable" for rollbacks_
 
-https://github.com/rajexcited/personal-finance-ui/releases/tag/v0.2.0 <!--  tag version  -->
+https://github.com/rajexcited/arthasight-ui/releases/tag/v0.2.0 <!--  tag version  -->
 
 - Not Applicable for rollbacks
 
@@ -72,8 +72,8 @@ https://github.com/rajexcited/personal-finance-ui/releases/tag/v0.2.0 <!--  tag 
 > **Note:** _Provide verification tasks to be performed after release deployment / rollback_
 
 - [ ] All public links are navigable before login
-- [ ] Successful login on Desktop Chrome browser v140.x
-- [ ] Successful login on Android(16) Chrome browser v140.x
+- [ ] Successful login on Desktop Chrome browser v143.x
+- [ ] Successful login on Android(16) Chrome browser v143.x
 - [ ] All links for "Expenses" are navigable after login
 - [ ] All links for "Payment Account" are navigable after login
 - [ ] All links for "Settings" are navigable after login
@@ -93,6 +93,27 @@ https://github.com/rajexcited/personal-finance-ui/releases/tag/v0.2.0 <!--  tag 
 
 NA
 
+### Complete Post Deployment Activities
+  
+- [ ] Run Smoke Test Automation  
+- [ ] Verify Smoke Test Video Report  
+- [ ] Add Comment with screenshots of spec executions and Smoke Test Report.  
+- [ ] Verify Tag created  
+- [ ] Close Milestone and ensure no issues are open  
+- [ ] Verify Release Notes and publish  
+- [ ] Add comment with status badge pass/failed.  
+
+
+> [!TIP]  
+> Please checked tasks if verified successfully.  
+
+<br/>
+
+> [!IMPORTANT]  
+> When post deployment verification is completed, close the issue regardless the status to mark the deployment attempt complete.  
+
+<br/>
+
 > [!IMPORTANT]  
 > If a release deployment fails and a rollback is required, submit a rollback request form as a sub-issue of this request.
 
@@ -100,3 +121,4 @@ NA
 
 > [!TIP]  
 > Update the sub-issue with post-deployment verification results. If failure occurs, include detailed explanations.
+

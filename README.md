@@ -1,8 +1,8 @@
-# Personal Finance UI
+# Arthasight UI
 
 The personal finance project is to help with finance activities. it helps with tracking expenses, payments; managing goals, configure budget, expense verification and alert me for fraudable item, etc. It helps in tracking investments and savings.
 
-[![UI Build](https://github.com/rajexcited/personal-finance-ui/actions/workflows/ui-build.yml/badge.svg?branch=master)](https://github.com/rajexcited/personal-finance-ui/actions/workflows/ui-build.yml)
+[![UI Build](https://github.com/rajexcited/arthasight-ui/actions/workflows/ui-build.yml/badge.svg?branch=master)](https://github.com/rajexcited/arthasight-ui/actions/workflows/ui-build.yml)
 
 ### Prod URL:
 
@@ -13,10 +13,10 @@ https://d380yt1dhnt8n.cloudfront.net/personal-finance
 
 ## Demo
 
-[![Demo deployment v0.1.0](https://github.com/rajexcited/personal-finance-ui/actions/workflows/ui-demo-deploy.yml/badge.svg?event=workflow_run)](https://github.com/rajexcited/personal-finance-ui/actions/workflows/ui-demo-deploy.yml)
+[![Demo deployment v0.1.0](https://github.com/rajexcited/arthasight-ui/actions/workflows/ui-demo-deploy.yml/badge.svg?event=workflow_run)](https://github.com/rajexcited/arthasight-ui/actions/workflows/ui-demo-deploy.yml)
 
 User can launch demo site to get experience of features available.
-https://rajexcited.github.io/personal-finance-ui/
+https://rajexcited.github.io/arthasight-ui/
 
 for login, use the email Id ending with `@demo.com` with any password.
 for example,
@@ -26,13 +26,13 @@ for example,
 
 ## Contributors
 
-- If you are facing issue with site, report issue [here](https://github.com/rajexcited/personal-finance-ui/issues)
+- If you are facing issue with site, report issue [here](https://github.com/rajexcited/arthasight-ui/issues)
 
-- If you have a question, you can ask away [here](https://github.com/rajexcited/personal-finance-ui/discussions/categories/q-a).
+- If you have a question, you can ask away [here](https://github.com/rajexcited/arthasight-ui/discussions/categories/q-a).
 - If you have answer to questions or usage, please feel free to reply.
 
-- To request new feature or enhancement, either create an issue or submit idea [here](https://github.com/rajexcited/personal-finance-ui/discussions/new?category=ideas)
+- To request new feature or enhancement, either create an issue or submit idea [here](https://github.com/rajexcited/arthasight-ui/discussions/new?category=ideas)
 
-- Go to [issues page](https://github.com/rajexcited/personal-finance-ui/issues) to view other issues.
+- Go to [issues page](https://github.com/rajexcited/arthasight-ui/issues) to view other issues.
 
-- Go to [discussions page](https://github.com/rajexcited/personal-finance-ui/discussions) to view Ideas.
+- Go to [discussions page](https://github.com/rajexcited/arthasight-ui/discussions) to view Ideas.

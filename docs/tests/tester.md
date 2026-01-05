@@ -15,7 +15,7 @@ test user in dev to login,
 
 ## Test on Demo site
 
-link: https://rajexcited.github.io/personal-finance-ui/
+link: https://rajexcited.github.io/arthasight-ui/
 
 The demo site is very useful to troubleshoot UI issues, verify new enhancements, etc.
 
